@@ -1,5 +1,4 @@
 import discord
-import os
 
 client = discord.Client()
 
@@ -25,5 +24,4 @@ async def on_message(message):
         embed.add_field(name="서버 온 되면 들어와주세요", value="저희 Next 서버는 패치 및 버그에 최선를 다합니다", inline=False)
         await message.channel.send(embed=embed)
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run("ODE4NjQ0OTcyMTEwMDg2MTY0.YEbEiw.-Jh_BGdqL5ddim6q4LSMqIThxpU")
