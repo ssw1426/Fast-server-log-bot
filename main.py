@@ -5,6 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+    game = discord.game('서버 상태 보는중')
     print("봇이 온라인으로 전환되었습니다.")
 
 @client.event
