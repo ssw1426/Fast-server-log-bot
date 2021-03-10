@@ -7,6 +7,7 @@ client = discord.Client()
 async def on_ready():
     game = discord.game('서버 상태 보는중')
     print("봇이 온라인으로 전환되었습니다.")
+    await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
 async def on_message(message):
