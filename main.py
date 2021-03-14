@@ -1,5 +1,5 @@
 import discord
-inport os
+import os
 
 intents = discord.Intents.default()
 intents.members = True
