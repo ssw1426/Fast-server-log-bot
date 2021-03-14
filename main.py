@@ -1,13 +1,13 @@
 import discord
 import os
 
-client = discord.Client()
+client = discord.Client(intents=intents)
 intents = discord.Intents.default()
 intents.members = True
 
 @client.event
 async def on_ready():
-    game = discord.Game('입퇴장 확인')
+    game = discord.Game('입퇴장 로그 확인')
     await client.change_presence(status=discord.Status.online, activity=game)
     print("봇이 온라인으로 변경되었습니다")
 
