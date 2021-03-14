@@ -14,7 +14,8 @@ async def on_member_join(member):
 
 @client.event
 async def on_member_remove(member):
-    await client.get_channel(820657549018660864).send(f"**{member}** 퇴장함")
+    embed = discord.Embed(title="[서버 퇴장 로그]", description=f"**{member}** 님께서 퇴장하셨습니다", color=0x62c1cc)
+    await client.get_channel(820657549018660864).send(embed=embed)
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
