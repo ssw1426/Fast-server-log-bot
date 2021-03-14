@@ -15,4 +15,4 @@ async def on_member_remove(member):
     await client.get_channel(820657549018660864).send(f"**{member}** 퇴장함")
 
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token) 
+client.run(access_token)
