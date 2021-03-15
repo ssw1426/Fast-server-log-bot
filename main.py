@@ -14,15 +14,15 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    embed = discord.Embed(title="[서버 입장 로그]", description=f"{member.mention} 님께서 입장하셨습니다", color=0x62c1cc)
+    embed = discord.Embed(title="[서버 입장 로그]", description=f"{member.mention} 님께서 Car Store 에 입장하셨습니다", color=0x62c1cc)
     embed.set_footer(text=f"{member}")
-    await client.get_channel(820657549018660864).send(embed=embed)
+    await client.get_channel(820938809100337155).send(embed=embed)
 
 @client.event
 async def on_member_remove(member):
-    embed = discord.Embed(title="[서버 퇴장 로그]", description=f"{member.mention} 님께서 퇴장하셨습니다", color=0x62c1cc)
+    embed = discord.Embed(title="[서버 퇴장 로그]", description=f"{member.mention} 님께서 Car Store 에서 퇴장하셨습니다", color=0x62c1cc)
     embed.set_footer(text=f"{member}")
-    await client.get_channel(820657549018660864).send(embed=embed)
+    await client.get_channel(820938809100337155).send(embed=embed)
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
